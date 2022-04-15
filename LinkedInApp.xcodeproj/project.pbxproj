@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE306B71280878F600B061C3 /* AnswerBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE306B70280878F600B061C3 /* AnswerBox.swift */; };
+		AE306B792808E01B00B061C3 /* GuessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE306B782808E01B00B061C3 /* GuessRow.swift */; };
+		AEAE7D0C27FE270800FD6AA5 /* LinkedInAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE7D0B27FE270800FD6AA5 /* LinkedInAppApp.swift */; };
+		AEAE7D0E27FE270800FD6AA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE7D0D27FE270800FD6AA5 /* ContentView.swift */; };
+		AEAE7D1027FE270900FD6AA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEAE7D0F27FE270900FD6AA5 /* Assets.xcassets */; };
+		AEAE7D1327FE270900FD6AA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEAE7D1227FE270900FD6AA5 /* Preview Assets.xcassets */; };
+		AEAE7D1827FE270900FD6AA5 /* LinkedInApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEAE7D1627FE270900FD6AA5 /* LinkedInApp.xcdatamodeld */; };
+		AEAE7D2227FE270900FD6AA5 /* LinkedInAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE7D2127FE270900FD6AA5 /* LinkedInAppTests.swift */; };
+		AEAE7D2C27FE270900FD6AA5 /* LinkedInAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE7D2B27FE270900FD6AA5 /* LinkedInAppUITests.swift */; };
+		AEAE7D2E27FE270900FD6AA5 /* LinkedInAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE7D2D27FE270900FD6AA5 /* LinkedInAppUITestsLaunchTests.swift */; };
+		AED711F9280602EF004129D1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED711F8280602EF004129D1 /* Model.swift */; };
+		AED711FD2807246E004129D1 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED711FC2807246E004129D1 /* Header.swift */; };
+		AED711FF28072BB7004129D1 /* GuessBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED711FE28072BB7004129D1 /* GuessBox.swift */; };
+		AED71203280758A3004129D1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED71202280758A3004129D1 /* ViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEAE7D1E27FE270900FD6AA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEAE7D0027FE270800FD6AA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEAE7D0727FE270800FD6AA5;
+			remoteInfo = LinkedInApp;
+		};
+		AEAE7D2827FE270900FD6AA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEAE7D0027FE270800FD6AA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEAE7D0727FE270800FD6AA5;
+			remoteInfo = LinkedInApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE306B70280878F600B061C3 /* AnswerBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerBox.swift; sourceTree = "<group>"; };
+		AE306B782808E01B00B061C3 /* GuessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessRow.swift; sourceTree = "<group>"; };
+		AEAE7D0827FE270800FD6AA5 /* LinkedInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEAE7D0B27FE270800FD6AA5 /* LinkedInAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInAppApp.swift; sourceTree = "<group>"; };
+		AEAE7D0D27FE270800FD6AA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AEAE7D0F27FE270900FD6AA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEAE7D1227FE270900FD6AA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AEAE7D1727FE270900FD6AA5 /* LinkedInApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LinkedInApp.xcdatamodel; sourceTree = "<group>"; };
+		AEAE7D1D27FE270900FD6AA5 /* LinkedInAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedInAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEAE7D2127FE270900FD6AA5 /* LinkedInAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInAppTests.swift; sourceTree = "<group>"; };
+		AEAE7D2727FE270900FD6AA5 /* LinkedInAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedInAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEAE7D2B27FE270900FD6AA5 /* LinkedInAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInAppUITests.swift; sourceTree = "<group>"; };
+		AEAE7D2D27FE270900FD6AA5 /* LinkedInAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AED711F8280602EF004129D1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AED711FC2807246E004129D1 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		AED711FE28072BB7004129D1 /* GuessBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessBox.swift; sourceTree = "<group>"; };
+		AED71202280758A3004129D1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEAE7D0527FE270800FD6AA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEAE7D1A27FE270900FD6AA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEAE7D2427FE270900FD6AA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE306B75280879B600B061C3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AED711FC2807246E004129D1 /* Header.swift */,
+				AED711FE28072BB7004129D1 /* GuessBox.swift */,
+				AE306B782808E01B00B061C3 /* GuessRow.swift */,
+				AE306B70280878F600B061C3 /* AnswerBox.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AEAE7CFF27FE270800FD6AA5 = {
+			isa = PBXGroup;
+			children = (
+				AEAE7D0A27FE270800FD6AA5 /* LinkedInApp */,
+				AEAE7D2027FE270900FD6AA5 /* LinkedInAppTests */,
+				AEAE7D2A27FE270900FD6AA5 /* LinkedInAppUITests */,
+				AEAE7D0927FE270800FD6AA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEAE7D0927FE270800FD6AA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEAE7D0827FE270800FD6AA5 /* LinkedInApp.app */,
+				AEAE7D1D27FE270900FD6AA5 /* LinkedInAppTests.xctest */,
+				AEAE7D2727FE270900FD6AA5 /* LinkedInAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEAE7D0A27FE270800FD6AA5 /* LinkedInApp */ = {
+			isa = PBXGroup;
+			children = (
+				AEAE7D0B27FE270800FD6AA5 /* LinkedInAppApp.swift */,
+				AEAE7D0D27FE270800FD6AA5 /* ContentView.swift */,
+				AE306B75280879B600B061C3 /* Components */,
+				AED711F8280602EF004129D1 /* Model.swift */,
+				AED71202280758A3004129D1 /* ViewModel.swift */,
+				AEAE7D0F27FE270900FD6AA5 /* Assets.xcassets */,
+				AEAE7D1627FE270900FD6AA5 /* LinkedInApp.xcdatamodeld */,
+				AEAE7D1127FE270900FD6AA5 /* Preview Content */,
+			);
+			path = LinkedInApp;
+			sourceTree = "<group>";
+		};
+		AEAE7D1127FE270900FD6AA5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AEAE7D1227FE270900FD6AA5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AEAE7D2027FE270900FD6AA5 /* LinkedInAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEAE7D2127FE270900FD6AA5 /* LinkedInAppTests.swift */,
+			);
+			path = LinkedInAppTests;
+			sourceTree = "<group>";
+		};
+		AEAE7D2A27FE270900FD6AA5 /* LinkedInAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AEAE7D2B27FE270900FD6AA5 /* LinkedInAppUITests.swift */,
+				AEAE7D2D27FE270900FD6AA5 /* LinkedInAppUITestsLaunchTests.swift */,
+			);
+			path = LinkedInAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEAE7D0727FE270800FD6AA5 /* LinkedInApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEAE7D3127FE270900FD6AA5 /* Build configuration list for PBXNativeTarget "LinkedInApp" */;
+			buildPhases = (
+				AEAE7D0427FE270800FD6AA5 /* Sources */,
+				AEAE7D0527FE270800FD6AA5 /* Frameworks */,
+				AEAE7D0627FE270800FD6AA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkedInApp;
+			productName = LinkedInApp;
+			productReference = AEAE7D0827FE270800FD6AA5 /* LinkedInApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEAE7D1C27FE270900FD6AA5 /* LinkedInAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEAE7D3427FE270900FD6AA5 /* Build configuration list for PBXNativeTarget "LinkedInAppTests" */;
+			buildPhases = (
+				AEAE7D1927FE270900FD6AA5 /* Sources */,
+				AEAE7D1A27FE270900FD6AA5 /* Frameworks */,
+				AEAE7D1B27FE270900FD6AA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEAE7D1F27FE270900FD6AA5 /* PBXTargetDependency */,
+			);
+			name = LinkedInAppTests;
+			productName = LinkedInAppTests;
+			productReference = AEAE7D1D27FE270900FD6AA5 /* LinkedInAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AEAE7D2627FE270900FD6AA5 /* LinkedInAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEAE7D3727FE270900FD6AA5 /* Build configuration list for PBXNativeTarget "LinkedInAppUITests" */;
+			buildPhases = (
+				AEAE7D2327FE270900FD6AA5 /* Sources */,
+				AEAE7D2427FE270900FD6AA5 /* Frameworks */,
+				AEAE7D2527FE270900FD6AA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEAE7D2927FE270900FD6AA5 /* PBXTargetDependency */,
+			);
+			name = LinkedInAppUITests;
+			productName = LinkedInAppUITests;
+			productReference = AEAE7D2727FE270900FD6AA5 /* LinkedInAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEAE7D0027FE270800FD6AA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					AEAE7D0727FE270800FD6AA5 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					AEAE7D1C27FE270900FD6AA5 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = AEAE7D0727FE270800FD6AA5;
+					};
+					AEAE7D2627FE270900FD6AA5 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = AEAE7D0727FE270800FD6AA5;
+					};
+				};
+			};
+			buildConfigurationList = AEAE7D0327FE270800FD6AA5 /* Build configuration list for PBXProject "LinkedInApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEAE7CFF27FE270800FD6AA5;
+			productRefGroup = AEAE7D0927FE270800FD6AA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEAE7D0727FE270800FD6AA5 /* LinkedInApp */,
+				AEAE7D1C27FE270900FD6AA5 /* LinkedInAppTests */,
+				AEAE7D2627FE270900FD6AA5 /* LinkedInAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEAE7D0627FE270800FD6AA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEAE7D1327FE270900FD6AA5 /* Preview Assets.xcassets in Resources */,
+				AEAE7D1027FE270900FD6AA5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEAE7D1B27FE270900FD6AA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEAE7D2527FE270900FD6AA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEAE7D0427FE270800FD6AA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE306B792808E01B00B061C3 /* GuessRow.swift in Sources */,
+				AED711F9280602EF004129D1 /* Model.swift in Sources */,
+				AED71203280758A3004129D1 /* ViewModel.swift in Sources */,
+				AED711FF28072BB7004129D1 /* GuessBox.swift in Sources */,
+				AE306B71280878F600B061C3 /* AnswerBox.swift in Sources */,
+				AEAE7D0E27FE270800FD6AA5 /* ContentView.swift in Sources */,
+				AED711FD2807246E004129D1 /* Header.swift in Sources */,
+				AEAE7D0C27FE270800FD6AA5 /* LinkedInAppApp.swift in Sources */,
+				AEAE7D1827FE270900FD6AA5 /* LinkedInApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEAE7D1927FE270900FD6AA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEAE7D2227FE270900FD6AA5 /* LinkedInAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEAE7D2327FE270900FD6AA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEAE7D2E27FE270900FD6AA5 /* LinkedInAppUITestsLaunchTests.swift in Sources */,
+				AEAE7D2C27FE270900FD6AA5 /* LinkedInAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEAE7D1F27FE270900FD6AA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEAE7D0727FE270800FD6AA5 /* LinkedInApp */;
+			targetProxy = AEAE7D1E27FE270900FD6AA5 /* PBXContainerItemProxy */;
+		};
+		AEAE7D2927FE270900FD6AA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEAE7D0727FE270800FD6AA5 /* LinkedInApp */;
+			targetProxy = AEAE7D2827FE270900FD6AA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AEAE7D2F27FE270900FD6AA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AEAE7D3027FE270900FD6AA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEAE7D3227FE270900FD6AA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LinkedInApp/Preview Content\"";
+				DEVELOPMENT_TEAM = U52GMQH3J6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bergerlrenee.LinkedInApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEAE7D3327FE270900FD6AA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LinkedInApp/Preview Content\"";
+				DEVELOPMENT_TEAM = U52GMQH3J6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bergerlrenee.LinkedInApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AEAE7D3527FE270900FD6AA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U52GMQH3J6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bergerlrenee.LinkedInAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkedInApp.app/LinkedInApp";
+			};
+			name = Debug;
+		};
+		AEAE7D3627FE270900FD6AA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U52GMQH3J6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bergerlrenee.LinkedInAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkedInApp.app/LinkedInApp";
+			};
+			name = Release;
+		};
+		AEAE7D3827FE270900FD6AA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U52GMQH3J6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bergerlrenee.LinkedInAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LinkedInApp;
+			};
+			name = Debug;
+		};
+		AEAE7D3927FE270900FD6AA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U52GMQH3J6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bergerlrenee.LinkedInAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LinkedInApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEAE7D0327FE270800FD6AA5 /* Build configuration list for PBXProject "LinkedInApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEAE7D2F27FE270900FD6AA5 /* Debug */,
+				AEAE7D3027FE270900FD6AA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEAE7D3127FE270900FD6AA5 /* Build configuration list for PBXNativeTarget "LinkedInApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEAE7D3227FE270900FD6AA5 /* Debug */,
+				AEAE7D3327FE270900FD6AA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEAE7D3427FE270900FD6AA5 /* Build configuration list for PBXNativeTarget "LinkedInAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEAE7D3527FE270900FD6AA5 /* Debug */,
+				AEAE7D3627FE270900FD6AA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEAE7D3727FE270900FD6AA5 /* Build configuration list for PBXNativeTarget "LinkedInAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEAE7D3827FE270900FD6AA5 /* Debug */,
+				AEAE7D3927FE270900FD6AA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AEAE7D1627FE270900FD6AA5 /* LinkedInApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AEAE7D1727FE270900FD6AA5 /* LinkedInApp.xcdatamodel */,
+			);
+			currentVersion = AEAE7D1727FE270900FD6AA5 /* LinkedInApp.xcdatamodel */;
+			path = LinkedInApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AEAE7D0027FE270800FD6AA5 /* Project object */;
+}
